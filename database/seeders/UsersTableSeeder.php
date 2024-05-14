@@ -3200,8 +3200,8 @@ class UsersTableSeeder extends Seeder
         $superAdmin = User::create(
             [
                 'name' => 'Super Admin',
-                'email' => 'superadmin@example.com',
-                'password' => Hash::make('1234'),
+                'email' => 'mohamed@gmail.com',
+                'password' => Hash::make('Bro@01095193236'),
                 'type' => 'super admin',
                 'lang' => 'en',
                 'avatar' => '',
@@ -3770,9 +3770,9 @@ class UsersTableSeeder extends Seeder
 
         $company = User::create(
             [
-                'name' => 'company',
-                'email' => 'company@example.com',
-                'password' => Hash::make('1234'),
+                'name' => 'Tek Part',
+                'email' => 'mohamedmansor0155@gamil.com',
+                'password' => Hash::make('Bro@01095193236'),
                 'type' => 'company',
                 'default_pipeline' => 1,
                 'plan' => 1,
