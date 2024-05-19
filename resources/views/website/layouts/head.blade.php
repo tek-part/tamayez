@@ -19,7 +19,7 @@
 
 <link
     rel="shortcut icon"
-    src="logo.png"
+    src="{{ asset('logo.png') }}"
     type="image/x-icon"
 />
 

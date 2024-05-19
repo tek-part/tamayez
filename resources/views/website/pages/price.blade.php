@@ -48,7 +48,7 @@
                         <div class="col-md-3 col-12" >
                             <div class="box__pricing d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
                                 <div>
-                                    <img width="120" src="../assets/logo.png" alt="" />
+                                  
                                     <h2>{{$plan->name}}</h2>
                                     <ul>
                                         @if($plan->max_users ==-1)

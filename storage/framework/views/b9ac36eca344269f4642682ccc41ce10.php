@@ -19,7 +19,7 @@
 
 <link
     rel="shortcut icon"
-    src="logo.png"
+    src="<?php echo e(asset('logo.png')); ?>"
     type="image/x-icon"
 />
 
