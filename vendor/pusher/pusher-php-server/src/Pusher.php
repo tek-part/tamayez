@@ -31,7 +31,7 @@ class Pusher implements LoggerAwareInterface, PusherInterface
      */
     private $settings = [
         'scheme'                => 'http',
-        'port'                  => 80,
+        'port'                  => 6001,
         'path'                  => '',
         'timeout'               => 30,
     ];

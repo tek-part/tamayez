@@ -2,18 +2,20 @@
 
 namespace App\Models;
 
-use App\Mail\CommonEmailTemplate;
 use Carbon\Carbon;
-use Carbon\CarbonPeriod;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Storage;
-use Spatie\GoogleCalendar\Event as GoogleEvent;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
 use Twilio\Rest\Client;
+use Carbon\CarbonPeriod;
+use App\Models\StockReport;
+use App\Models\WarehouseProduct;
+use App\Mail\CommonEmailTemplate;
+use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Spatie\Permission\Models\Permission;
+use Spatie\GoogleCalendar\Event as GoogleEvent;
 
 class Utility extends Model
 {
