@@ -15,7 +15,7 @@
 <meta property="og:url" content="" />
 <meta property="og:description" content="Tamayez" />
 <meta property="og:type" content="Tamayez" />
-<meta property="og:image" content="asset/images/og.png" />
+<meta property="og:image" content="{{ asset('public/asset/images/og.png') }}" />
 
 <link
     rel="shortcut icon"
@@ -23,13 +23,13 @@
     type="image/x-icon"
 />
 
-<link rel="stylesheet" href="asset/style/bootstrap.css" />
-<script src="asset/js/bootstrap.js"></script>
+<link rel="stylesheet" href="{{ asset('public/asset/style/bootstrap.css') }}" />
+<script src="{{ asset('public/asset/js/bootstrap.js') }}"></script>
 
-<link rel="stylesheet" href="asset/style/aos.css" />
+<link rel="stylesheet" href="{{ asset('public/asset/style/aos.css') }}" />
 
-<link rel="stylesheet" href="asset/style/theme.css" />
-<link rel="stylesheet" href="asset/style/main.css" />
+<link rel="stylesheet" href="{{ asset('public/asset/style/theme.css') }}" />
+<link rel="stylesheet" href="{{ asset('public/asset/style/main.css') }}" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link

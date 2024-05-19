@@ -49,7 +49,7 @@
                                     >احصل على النظام
                                     </a>
 
-                                    <a href="https://erp.tek-part.com/login" class="button__tp outline"> تجربة المنصة </a>
+                                    <a href="<?php echo e(route('login')); ?>" class="button__tp outline"> تجربة المنصة </a>
                                 </div>
                             </div>
                         </div>
