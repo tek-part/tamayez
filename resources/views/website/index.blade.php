@@ -352,9 +352,17 @@
             />
             <div class="section-header text-center mb-3">
                 <h2 class="mt-minus-5">عملائنا وشركاء النجاج</h2>
+                <div class="row " style="justify-content: center">
+                    <img src="asset/partenar/1.png" style="width: 150px;" alt=""/>
+                    <img src="asset/partenar/2.svg" style="width: 150px;" alt=""/>
+                    <img src="asset/partenar/3.png" style="width: 150px;" alt=""/>
+                    <img src="asset/partenar/4.png" style="width: 150px;" alt=""/>
+                    <img src="asset/partenar/5.png" style="width: 150px;" alt=""/>
+                    <img src="asset/partenar/6.png" style="width: 150px;" alt=""/>
+                </div>
             </div>
 
-            <div class="container">
+            {{-- <div class="container">
                 <img src="../asset/Group 876.png" class="img" alt="" />
                 <div class="about__wrapper px-md-5">
                     <div class="row gx-5 px-5 gy-4 gy-sm-0 align-items-center"></div>
@@ -367,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="container">
