@@ -1,5 +1,4 @@
-@extends('website.layouts.app')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
     <section class="banner banner--style1 pb-5 home">
 
@@ -44,52 +43,52 @@
                 <img src="../assets/Group 876.png" class="img" alt="" />
                 <div
                     class="d-flex align-items-center flex-wrap justify-content-center gap-5 flex-wrap pt-5">
-                    @foreach($plans as $plan)
+                    <?php $__currentLoopData = $plans; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $plan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="col-md-3 col-12" >
                             <div class="box__pricing d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
                                 <div>
                                     <img width="120" src="../assets/logo.png" alt="" />
-                                    <h2>{{$plan->name}}</h2>
+                                    <h2><?php echo e($plan->name); ?></h2>
                                     <ul>
-                                        @if($plan->max_users ==-1)
+                                        <?php if($plan->max_users ==-1): ?>
                                             <li class="text-white fs-6">✔ عدد غير محدود من المستخدمين </li>
-                                        @else
-                                            <li class="text-white fs-6">✔ عدد {{$plan->max_users}} مستخدمًا </li>
-                                        @endif
-                                        @if($plan->max_customers ==-1)
+                                        <?php else: ?>
+                                            <li class="text-white fs-6">✔ عدد <?php echo e($plan->max_users); ?> مستخدمًا </li>
+                                        <?php endif; ?>
+                                        <?php if($plan->max_customers ==-1): ?>
                                             <li class="text-white fs-6">✔ عدد غير محدود من العملاء </li>
-                                        @else
-                                            <li class="text-white fs-6">✔ عدد {{$plan->max_users}} عميل </li>
-                                        @endif
-                                        @if($plan->crm ==1)
+                                        <?php else: ?>
+                                            <li class="text-white fs-6">✔ عدد <?php echo e($plan->max_users); ?> عميل </li>
+                                        <?php endif; ?>
+                                        <?php if($plan->crm ==1): ?>
                                             <li class="text-white fs-6">✔ نظام CRM </li>
-                                        @endif
-                                        @if($plan->hrm ==1)
+                                        <?php endif; ?>
+                                        <?php if($plan->hrm ==1): ?>
                                             <li class="text-white fs-6">✔ نظام HRM </li>
-                                        @endif
-                                        @if($plan->pos ==1)
+                                        <?php endif; ?>
+                                        <?php if($plan->pos ==1): ?>
                                             <li class="text-white fs-6">✔ نظام POS للمبيعات  </li>
-                                        @endif
-                                        @if($plan->account ==1)
+                                        <?php endif; ?>
+                                        <?php if($plan->account ==1): ?>
                                             <li class="text-white fs-6">✔ نظام ادارة المععاملات المالية </li>
-                                        @endif
-                                        @if($plan->project ==1)
+                                        <?php endif; ?>
+                                        <?php if($plan->project ==1): ?>
                                             <li class="text-white fs-6">✔ نظام ادارة المشاريع </li>
-                                        @endif
-                                        @if($plan->chatgpt ==1)
+                                        <?php endif; ?>
+                                        <?php if($plan->chatgpt ==1): ?>
                                             <li class="text-white fs-6">✔ مدعوم بالذكاء الاصطناعي</li>
-                                        @endif
-                                        @if($plan->storage_limit )
-                                            <li class="text-white fs-6">✔المساحة التخزينية المتاحه {{$plan->storage_limit}} ميجا بايت </li>
-                                        @endif
+                                        <?php endif; ?>
+                                        <?php if($plan->storage_limit ): ?>
+                                            <li class="text-white fs-6">✔المساحة التخزينية المتاحه <?php echo e($plan->storage_limit); ?> ميجا بايت </li>
+                                        <?php endif; ?>
                                     </ul>
-                                    <span class="mt-4 d-block price">${{ number_format($plan->price, 2, '.', ',') }}</span>
+                                    <span class="mt-4 d-block price">$<?php echo e(number_format($plan->price, 2, '.', ',')); ?></span>
                                 </div>
 
                                 <button class="button__blue mt-2">اختر</button>
                             </div>
                         </div>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
             </div>
         </div>
@@ -105,7 +104,9 @@
             </div>
         </div>
     </section>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
 
+
+<?php echo $__env->make('website.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\tamayez\resources\views/website/pages/price.blade.php ENDPATH**/ ?>

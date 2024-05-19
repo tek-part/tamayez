@@ -258,4 +258,4 @@
 </body>
 
 </html>
-<?php /**PATH J:\Systems\تميز ERP\ERP\resources\views/layouts/auth.blade.php ENDPATH**/ ?>
+<?php /**PATH J:\Systems\تميز ERP\tamayez\resources\views/layouts/auth.blade.php ENDPATH**/ ?>

@@ -1,25 +1,25 @@
-<title>Forex</title>
+<title>Tamayez</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Sites meta Data -->
-<meta name="application-name" content="Forex" />
+<meta name="application-name" content="Tamayez" />
 <meta name="author" content="thetork" />
-<meta name="keywords" content="EForex" />
-<meta name="description" content="Forex." />
+<meta name="keywords" content="ETamayez" />
+<meta name="description" content="Tamayez." />
 
 <!-- OG meta data -->
-<meta property="og:title" content="Forex" />
-<meta property="og:site_name" content="Forex" />
+<meta property="og:title" content="Tamayez" />
+<meta property="og:site_name" content="Tamayez" />
 <meta property="og:url" content="" />
-<meta property="og:description" content="Forex" />
-<meta property="og:type" content="Forex" />
+<meta property="og:description" content="Tamayez" />
+<meta property="og:type" content="Tamayez" />
 <meta property="og:image" content="asset/images/og.png" />
 
 <link
     rel="shortcut icon"
-    href="asset/images/favicon.png"
+    src="logo.png"
     type="image/x-icon"
 />
 

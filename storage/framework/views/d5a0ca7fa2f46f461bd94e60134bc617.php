@@ -146,4 +146,4 @@ unset($__errorArgs, $__bag); ?>
     });
 </script>
 
-<?php echo $__env->make('layouts.auth', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\ERP\resources\views/auth/login.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.auth', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\tamayez\resources\views/auth/login.blade.php ENDPATH**/ ?>

@@ -17,7 +17,7 @@
             style="left: 0px; top: -10%"
             alt=""
         />
-        <div class="section pt-5">
+        <div class="section pt-2">
             <img src="../assets/Group (5).png" class="bg__join__img" alt="" />
             <div class="container about__me t">
                 <h2 class="text-green text-center">
@@ -99,39 +99,6 @@
             </div>
         </div>
 
-        <div class="section">
-            <img
-                src="assets/image/Cube6 - Transparent (1).png"
-                class="elipse__left"
-                style="width: 200px; top: 0px; transform: translate(-50)"
-                alt=""
-            />
-            <img
-                src="assets/image/Rectangle 9545.png"
-                class="elipse__left"
-                style="left: 0px; bottom: -132%"
-                alt=""
-            />
-            <div class="section-header text-center mb-3">
-                <h2 class="mt-minus-5">عملائنا وشركاء النجاج</h2>
-            </div>
-
-            <div class="container">
-                <img src="../assets/Group 876.png" class="img" alt="" />
-                <div class="about__wrapper px-5">
-                    <div class="row gx-5 px-5 gy-4 gy-sm-0 align-items-center"></div>
-                    <div class="contact">
-                        <h5>لا تدع شيئا يفوتك</h5>
-                        <span>ادخل بريدك الالكتروني وسوف تستمتع بنشرتنا الاخبارية</span>
-                        <div class="d-flex align-items-center gap-2 pt-5 w-75 m-auto">
-                            <input type="text" placeholder="البريد الالكتروني" />
-                            <button class=" ">اشترك</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container">
             <div class="footer_2">
                 <div class="d-flex justify-content-between">
@@ -146,4 +113,4 @@
 
 
 
-<?php echo $__env->make('website.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\ERP\resources\views/website/pages/contact.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('website.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\tamayez\resources\views/website/pages/contact.blade.php ENDPATH**/ ?>

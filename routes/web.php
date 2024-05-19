@@ -167,7 +167,8 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
-
+Route::post('lead', 'LeadController@storeApi')->name('book');
+Route::get('pipeline', 'LeadController@pipelineApi')->name('pipeline.get');
 ///Website Route
 Route::controller(WebsiteController::class)->group(function (){
     Route::get('/packages','price')->name('website.price');

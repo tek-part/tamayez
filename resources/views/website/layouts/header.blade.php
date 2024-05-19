@@ -3,15 +3,15 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo d-flex align-items-center gap-1">
-                    <a href="#-2.html">
+                    <a href="{{route('website.home')}}">
                         <img
                             class="dark"
-                            style="width: 50px;height: 60px"
-                            src="./asset/image/rm281batch2-adj-011 1.svg"
+                            style="width: 80px;height: 60px"
+                            src="logo.png"
                             alt="logo"
                         />
                     </a>
-                    <h4>تميز</h4>
+                    {{-- <h4>تميز</h4> --}}
                 </div>
                 <div class="menu-area">
                     <ul class="menu menu--style1 align-items-center">
@@ -59,8 +59,8 @@
                         <li>
                             <div class="menu-area">
                                 <div class="header-btn d-block d-md-none">
-                                    <a href="login.tml" class="text-white"> الدخول </a>
-                                    <a href="online" class="text-white">  ابدأ مشروع </a>
+                                    <a href="{{route('login')}}" class="text-white"> الدخول </a>
+                                    <a href="{{route('website.book')}}" class="text-white">  ابدأ مشروع </a>
 
                                 </div>
                             </div>

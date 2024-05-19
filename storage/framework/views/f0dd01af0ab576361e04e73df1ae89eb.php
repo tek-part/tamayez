@@ -1,5 +1,4 @@
-@extends('website.layouts.app')
-@section('content')
+<?php $__env->startSection('content'); ?>
     <section class="banner banner--style1 pb-5 home">
         <img
             src="assets/image/Rectangle 9546.png"
@@ -36,8 +35,8 @@
                 <img src="../assets/Ellipse 71.png" class="elipse__left" alt="" />
 
                 <div class="container py-2">
-                    <form action="{{ route('book') }}" method="POST" class="box__form" id="book_form">
-                        @csrf
+                    <form action="<?php echo e(route('book')); ?>" method="POST" class="box__form" id="book_form">
+                        <?php echo csrf_field(); ?>
                         <div class="row">
                             <!-- Name input -->
                             <div class="col-md-6">
@@ -46,16 +45,30 @@
                                     <input
                                         type="text"
                                         required
-                                        class="form-control @error('name') is-invalid @enderror"
+                                        class="form-control <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                         id="floatingInput"
                                         placeholder="الاسم"
                                         name="name"
                                     />
                                     <label for="floatingInput">الاسم</label>
                                     <!-- Error message -->
-                                    @error('name')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
+                                    <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                        <div class="invalid-feedback"><?php echo e($message); ?></div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <!-- Phone input -->
@@ -65,16 +78,30 @@
                                     <input
                                         type="number"
                                         required
-                                        class="form-control @error('phone') is-invalid @enderror"
+                                        class="form-control <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                         id="floatingInput"
                                         placeholder="رقم الهاتف"
                                         name="phone"
                                     />
                                     <label for="floatingInput"رقم الهاتف</label>
                                     <!-- Error message -->
-                                    @error('phone')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
+                                    <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                        <div class="invalid-feedback"><?php echo e($message); ?></div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <!-- Email input -->
@@ -84,16 +111,30 @@
                                     <input
                                         type="email"
                                         required
-                                        class="form-control @error('email') is-invalid @enderror"
+                                        class="form-control <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                         id="floatingInput"
                                         placeholder="name@example.com"
                                         name="email"
                                     />
                                     <label for="floatingInput">الاميل</label>
                                     <!-- Error message -->
-                                    @error('email')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
+                                    <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                        <div class="invalid-feedback"><?php echo e($message); ?></div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <!-- Service input -->
@@ -103,19 +144,33 @@
                                     <select
                                         name="pipeline_id"
                                         required
-                                        class="form-select @error('pipeline_id') is-invalid @enderror"
+                                        class="form-select <?php $__errorArgs = ['pipeline_id'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                         id="floatingSelect"
                                         aria-label="Floating label select example"
                                     >
                                         <option selected>الرجاء تحديد الخدمة المطلوبة</option>
-                                        @foreach ($pipelines as $pipeline)
-                                            <option value="{{ $pipeline['id'] }}">{{ $pipeline['name'] }}</option>
-                                        @endforeach
+                                        <?php $__currentLoopData = $pipelines; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $pipeline): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <option value="<?php echo e($pipeline['id']); ?>"><?php echo e($pipeline['name']); ?></option>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                     </select>
                                     <!-- Error message -->
-                                    @error('pipeline_id')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
+                                    <?php $__errorArgs = ['pipeline_id'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                        <div class="invalid-feedback"><?php echo e($message); ?></div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <!-- Message input -->
@@ -123,7 +178,14 @@
                                 <!-- Validation and disable class added -->
                                 <div class="form-floating">
                                     <textarea
-                                        class="form-control @error('subject') is-invalid @enderror"
+                                        class="form-control <?php $__errorArgs = ['subject'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                         placeholder="Leave a comment here"
                                         id="floatingTextarea2"
                                         style="height: 100px"
@@ -132,9 +194,16 @@
                                     ></textarea>
                                     <label for="floatingTextarea2">اترك لنا رسالة</label>
                                     <!-- Error message -->
-                                    @error('subject')
-                                        <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
+                                    <?php $__errorArgs = ['subject'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                        <div class="invalid-feedback"><?php echo e($message); ?></div>
+                                    <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +231,9 @@
             </div>
         </div>
     </section>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
 
+
+<?php echo $__env->make('website.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH J:\Systems\تميز ERP\tamayez\resources\views/website/pages/book.blade.php ENDPATH**/ ?>
