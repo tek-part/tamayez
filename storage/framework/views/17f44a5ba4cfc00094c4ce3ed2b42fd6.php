@@ -7,7 +7,7 @@
                         <img
                             class="dark"
                             style="width: 80px;height: 60px"
-                            src="<?php echo e(asset('logo.png')); ?>"
+                            src="<?php echo e(asset('public/logo.png')); ?>"
                             alt="logo"
                         />
                     </a>

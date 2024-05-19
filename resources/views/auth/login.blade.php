@@ -1,4 +1,6 @@
-@extends('layouts.auth')
+@extends('website.layouts.app')
+
+
 @php
     use App\Models\Utility;
     $logo = \App\Models\Utility::get_file('uploads/logo');
@@ -7,7 +9,7 @@
 
 @endphp
 @push('custom-scripts')
-@if ($settings['recaptcha_module'] == 'on')
+    @if ($settings['recaptcha_module'] == 'on')
         {!! NoCaptcha::renderJs() !!}
     @endif
 @endpush
@@ -29,36 +31,67 @@
     $languages = App\Models\Utility::languages();
 
 @endphp
-@section('language-bar')
-    <div class="lang-dropdown-only-desk">
-        <li class="dropdown dash-h-item drp-language">
-            <a class="dash-head-link dropdown-toggle btn" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-{{--                <span class="drp-text"> {{ $languages[$lang] }}--}}
-                </span>
-            </a>
-            <div class="dropdown-menu dash-h-dropdown dropdown-menu-end">
-                @foreach($languages as $code => $language)
-                <a href="{{ route('login',$code) }}"tabindex="0"
-                class="dropdown-item ">
-                <span>{{ Str::upper($language) }}</span>
-            </a>
-                @endforeach
-            </div>
-        </li>
-    </div>
-@endsection
+
 
 @section('content')
+    <div class="login">
+
+        <img class="left" src="assets/image/Frame 4.png" alt="" />
+        <div class="box">
+            {{ Form::open(['route' => 'login', 'method' => 'post', 'id' => 'loginForm', 'class' => 'login-form']) }}
+            @if (session('status'))
+                <div class="mb-4 font-medium text-lg text-green-600 text-danger">
+                    {{ session('status') }}
+                </div>
+            @endif
+            <h4 class="text-center  mb-4">تسجيل الدخول</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="">البريد الالكتروني</span>
+                    <div class="form-floating mb-4 mt-2">
+                        {{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => __('Enter Your Email')]) }}
+                        @error('email')
+                            <span class="error invalid-email text-danger" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <span class="">كلمة المرور </span>
+                    <div class="form-floating mb-4 mt-2">
+                    {{ Form::password('password', ['class' => 'form-control', 'placeholder' => __('Enter Your Password'), 'id' => 'input-password']) }}
+                    @error('password')
+                        <span class="error invalid-password text-danger" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            </div>
+
+            </div>
+            <button
+                class="btn__tekpart w-50 m-auto text-center m-auto text-center d-flex align-items-center justify-content-center"
+                style="width: fit-content; width: 200px" type="submit">
+                دخول
+            </button>
+            </form>
+        </div>
+    </div>
+
+
+
+{{-- 
     <div class="card-body">
         <div>
             <h2 class="mb-3 f-w-600">{{ __('Login') }}</h2>
         </div>
         {{ Form::open(['route' => 'login', 'method' => 'post', 'id' => 'loginForm', 'class' => 'login-form']) }}
         @if (session('status'))
-        <div class="mb-4 font-medium text-lg text-green-600 text-danger">
-            {{session('status') }}
-        </div>
-    @endif
+            <div class="mb-4 font-medium text-lg text-green-600 text-danger">
+                {{ session('status') }}
+            </div>
+        @endif
         <div class="custom-login-form">
             <div class="form-group mb-3">
                 <label class="form-label">{{ __('Email') }}</label>
@@ -82,95 +115,19 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
 
                     @if (Route::has('password.request'))
-                        <span><a href="{{ route('password.request',$lang) }}"
+                        <span><a href="{{ route('password.request', $lang) }}"
                                 tabindex="0">{{ __('Forgot your password?') }}</a></span>
                     @endif
                 </div>
             </div>
 
 
-            @if ($settings['recaptcha_module'] == 'on')
-                <div class="form-group col-lg-12 col-md-12 mt-3">
-                     {!! NoCaptcha::display($settings['cust_darklayout']=='on' ? ['data-theme' => 'dark'] : []) !!}
-                    @error('g-recaptcha-response')
-                        <span class="small text-danger" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            @endif
-
             <div class="d-grid">
                 {{ Form::submit(__('Login'), ['class' => 'btn btn-primary mt-2', 'id' => 'saveBtn']) }}
             </div>
-            @if ($settings['enable_signup'] == 'on')
-            <p class="my-4 text-center">{{ __("Don't have an account?") }}
-                <a href="{{ route('register',$lang) }}" class="text-primary">{{__('Register')}}</a>
-            </p>
-        @endif
+
+
         </div>
         {{ Form::close() }}
-    </div>
+    </div> --}}
 @endsection
-
-{{-- @section('content')
-
-    <div class="">
-        <h2 class="mb-3 f-w-600">{{__('Login')}}</h2>
-    </div>
-    {{Form::open(array('route'=>'login','method'=>'post','id'=>'loginForm' ))}}
-    @csrf
-    <div class="">
-        <div class="form-group mb-3">
-            <label for="email" class="form-label">{{__('Email')}}</label>
-            <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-            @error('email')
-            <div class="invalid-feedback" role="alert">{{ $message }}</div>
-            @enderror
-        </div>
-        <div class="form-group mb-3">
-            <label for="password" class="form-label">{{__('Password')}}</label>
-            <input class="form-control @error('password') is-invalid @enderror" id="password" type="password" name="password" required autocomplete="current-password">
-            @error('password')
-            <div class="invalid-feedback" role="alert">{{ $message }}</div>
-            @enderror
-
-        </div>
-
-        @if (env('RECAPTCHA_MODULE') == 'on')
-            <div class="form-group mb-3">
-                {!! NoCaptcha::display() !!}
-                @error('g-recaptcha-response')
-                <span class="small text-danger" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                @enderror
-            </div>
-        @endif
-        <div class="form-group mb-4">
-            @if (Route::has('password.request'))
-                <a href="{{ route('password.request') }}" class="text-xs">{{ __('Forgot Your Password?') }}</a>
-            @endif
-
-        </div>
-        <div class="d-grid">
-            <button type="submit" class="btn-login btn btn-primary btn-block mt-2" id="login_button">{{__('Login')}}</button>
-        </div>
-        @if ($settings['enable_signup'] == 'on')
-
-        <p class="my-4 text-center">{{__("Don't have an account?")}} <a href="{{ route('register',$lang) }}" class="text-primary">{{__('Register')}}</a></p>
-        @endif
-
-    </div>
-    {{Form::close()}}
-@endsection --}}
-
-<script src="{{ asset('js/jquery.min.js') }}"></script>
-<script>
-    $(document).ready(function() {
-        $("#form_data").submit(function(e) {
-            $("#login_button").attr("disabled", true);
-            return true;
-        });
-    });
-</script>
