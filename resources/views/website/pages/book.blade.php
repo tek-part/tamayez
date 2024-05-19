@@ -29,7 +29,7 @@
                 <div class="banner__btn-group btn-group m-auto w-100 d-flex align-items-center justify-content-center pb-5">
                     <a href="https://wa.me/966562005408" class="trk-btn trk-btn--primary trk-btn--arrow btn__tekpart">احصل على النظام</a>
 
-                    <a href="https://erp.tek-part.com/login" class="button__tp outline"> تجربة المنصة </a>
+                    <a href="{{route('login')}}" class="button__tp outline"> تجربة المنصة </a>
                 </div>
                 <img src="../assets/Group 876.png" class="img" alt="" />
 
