@@ -3,14 +3,14 @@
     <section class="banner banner--style1 pb-5 home">
         <div class="section">
             <img
-                src="asset/image/Group 1261152722.png"
+                src="{{ asset('public/asset/image/Group 1261152722.png') }}"
                 style="left: -50%; top: -70%"
                 class="elipse__top"
                 alt=""
             />
 
             <img
-                src="asset/image/Rectangle 9546.png"
+                src="{{ asset('public/asset/image/Rectangle 9546.png') }} "
                 class="elipse__right__center"
                 alt=""
             />
@@ -59,7 +59,7 @@
                             <div class="banner__thumb" data-aos="fade-right" data-aos-duration="1000">
                                 <img
                                     style="max-height: 450px"
-                                    src="asset/image/Image (16).png"
+                                    src="{{ asset('public/asset/image/Image (16).png') }}"
                                     alt="banner-thumb"
                                     class="dark"
                                 />
@@ -72,7 +72,7 @@
 
         <div class="section">
             <img
-                src="asset/image/Group 1261152719.png"
+                src="{{ asset('public/asset/image/Group 1261152719.png') }}"
                 class="elipse__right"
                 style="right: 20px; top: 30px"
                 alt=""
@@ -90,7 +90,7 @@
                     <div class="row gx-4">
                         <div class="col-lg-6 col-md-7">
                             <div class="banner__content" data-aos="fade-left" data-aos-duration="1000">
-                                <img src="../asset/Group 1261152725.svg" alt="" />
+                                <img src="{{ asset('public/asset/Group 1261152725.svg') }}" alt="" />
                                 <h4 class="mb-5">
                                     تخطيط موارد المؤسسات الأكثر مرونة على هذا الكوكب
                                 </h4>
@@ -105,19 +105,19 @@
                             <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
                                 <div class="box__easy">
                                     <div class="img">
-                                        <img src="asset/image/mobile-store-online-store-svgrepo-com 1.svg" alt=""/>
+                                        <img src="{{ asset('public/asset/image/mobile-store-online-store-svgrepo-com 1.svg') }}" alt=""/>
                                     </div>
                                     <h5>المتاجر</h5>
                                     <p>169</p>
                                 </div>
                                 <div class="box__easy">
-                                    <div class="img"><img src="asset/image/Group 1261152718.svg" alt="" /></div>
+                                    <div class="img"><img src="{{ asset('public/asset/image/Group 1261152718.svg') }}" alt="" /></div>
                                     <h5>الطلبــات</h5>
                                     <p>8796</p>
                                 </div>
                                 <div class="box__easy">
                                     <div class="img">
-                                        <img src="asset/image/sales-amount-svgrepo-com 1.svg" alt=""/>
+                                        <img src="{{ asset('public/asset/image/sales-amount-svgrepo-com 1.svg') }}" alt=""/>
                                     </div>
                                     <h5>المعاملات</h5>
                                     <p>453,545 $</p>
@@ -130,25 +130,25 @@
         </div>
         <div class="section">
             <img
-                src="asset/image/Rectangle 9544.png"
+                src="{{ asset('public/asset/image/Rectangle 9544.png') }}"
                 style="top: 0px; transform: translateY(-50%); width: 60%"
                 class="elipse__left"
                 alt=""
             />
             <img
-                src="asset/image/HollowCube3 - Transparent.png"
+                src="{{ asset('public/asset/image/HollowCube3 - Transparent.png') }}"
                 style="top: -50px; transform: translate(-50%); left: 10%; width: auto"
                 class="elipse__left"
                 alt=""
             />
             <img
-                src="asset/image/Group 1261152719.png"
+                src="{{ asset('public/asset/image/Group 1261152719.png') }}"
                 class="elipse__right"
                 style="right: 20px; top: 0px"
                 alt=""
             />
             <img
-                src="asset/image/Group 48095480.png"
+                src="{{ asset('public/asset/image/Group 48095480.png') }}"
                 class="elipse__right"
                 style="right: 0px; bottom: 0px !important; width: auto"
                 alt=""
@@ -166,7 +166,7 @@
             </h6>
 
             <div class="container">
-                <img src="asset/Group 876.png" class="img" alt="" />
+                <img src="{{ asset('public/asset/Group 876.png') }}" class="img" alt="" />
                 <div class="row gy-4 gy-sm-0 align-items-center">
                     <div class="banner__bg"></div>
                     <div
@@ -176,7 +176,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/money-bag 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/money-bag 1.svg') }}" alt="" />
                             </div>
                             <h4>قم بإدارة أموالك</h4>
                             <span
@@ -193,7 +193,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/shopping-bag 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/shopping-bag 1.svg') }}" alt="" />
                             </div>
                             <h4>إدارة الطلبات POS</h4>
                             <span
@@ -210,7 +210,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/customer-care 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/customer-care 1.svg') }}" alt="" />
                             </div>
                             <h4>الموارد البشرية HR</h4>
                             <span
@@ -226,7 +226,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/manufacturing 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/manufacturing 1.svg') }}" alt="" />
                             </div>
                             <h4>  ERP</h4>
                             <span>
@@ -243,7 +243,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/marketing 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/marketing 1.svg') }}" alt="" />
                             </div>
                             <h4>CRM</h4>
                             <span
@@ -261,7 +261,7 @@
                     >
                         <div class="box__type">
                             <div class="box">
-                                <img src="asset/image/briefing 1.svg" alt="" />
+                                <img src="{{ asset('public/asset/image/briefing 1.svg') }}" alt="" />
                             </div>
                             <h4>Project Manager</h4>
                             <span
@@ -275,13 +275,13 @@
         </div>
         <div class="section">
             <img
-                src="asset/image/Sphere7 - Transparent.png"
+                src="{{ asset('public/asset/image/Sphere7 - Transparent.png') }}"
                 class="elipse__right__center"
                 style="width: 200px; top: 50%; transform: translate(-50)"
                 alt=""
             />
             <img
-                src="asset/image/Rectangle 9545.png"
+                src="{{ asset('public/asset/image/Rectangle 9545.png') }}"
                 class="elipse__left"
                 style="left: 0px; bottom: -132%"
                 alt=""
@@ -291,7 +291,7 @@
             </div>
 
             <div class="container">
-                <img src="../asset/Group 876.png" class="img" alt="" />
+                <img src="{{ asset('public/asset/Group 876.png') }}" class="img" alt="" />
                 <div class="about__wrapper px-md-5">
                     <div class="row gx-5 px-md-5 gy-4 gy-sm-0 align-items-center">
                         <div class="col-lg-6">
@@ -326,7 +326,7 @@
                                     <div class="about__thumb floating-content">
                                         <img
                                             class="dark"
-                                            src="../asset/image/MacBook Air (15 inch).svg"
+                                            src="{{ asset('public/asset/image/MacBook Air (15 inch).svg') }}"
                                             alt="about-image"
                                         />
                                     </div>
@@ -339,13 +339,13 @@
         </div>
         <div class="section">
             <img
-                src="asset/image/Cube6 - Transparent (1).png"
+                src="{{ asset('public/asset/image/Cube6 - Transparent (1).png') }}"
                 class="elipse__left"
                 style="width: 200px; top: 0px; transform: translate(-50)"
                 alt=""
             />
             <img
-                src="asset/image/Rectangle 9545.png"
+                src="{{ asset('public/asset/image/Rectangle 9545.png') }}"
                 class="elipse__left"
                 style="left: 0px; bottom: -132%"
                 alt=""

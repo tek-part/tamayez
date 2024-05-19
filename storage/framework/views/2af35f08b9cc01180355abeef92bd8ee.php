@@ -7,8 +7,8 @@
 <?php echo $__env->make('website.layouts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php echo $__env->yieldContent('content'); ?>
 <?php echo $__env->make('website.layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<script src="asset/js/aos.js"></script>
-<script src="asset/js/custom.js"></script>
+<script src="<?php echo e(asset('public/asset/js/aos.js')); ?>"></script>
+<script src="<?php echo e(asset('public/asset/js/custom.js')); ?>"></script>
 <script>
     AOS.init();
 </script>

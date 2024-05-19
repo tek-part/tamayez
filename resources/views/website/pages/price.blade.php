@@ -5,23 +5,23 @@
 
 
         <img
-            src="assets/image/Rectangle 9546.png"
+            src="{{ asset('public/assets/image/Rectangle 9546.png') }}"
             style="top: 0px;"
             class="elipse__right__center"
             alt=""
         /><img
-            src="assets/image/Group 1261152719.png"
+            src="{{ asset('public/assets/image/Group 1261152719.png') }}"
             class="elipse__right"
             style="right: 20px; top: 50%"
             alt=""
         /> <img
-            src="assets/image/Group 48095480 (1).png"
+            src="{{ asset('public/asset/image/Group 48095480 (1).png') }}"
             class="elipse__left"
             style="left: 0px; top: -10%"
             alt=""
         />
         <div class="section pt-5">
-            <img src="../assets/Group (5).png" class="bg__join__img" alt="" />
+            <img src="{{ asset('public/asset/Group (5).png') }}" class="bg__join__img" alt="" />
             <div class="container about__me t">
                 <h2 class="text-green text-center">
                     أسعار تصميم متجر الكتروني احترافي
@@ -41,7 +41,7 @@
 
                     <a href="" class="button__tp outline"> تجربة المنصة </a>
                 </div>
-                <img src="../assets/Group 876.png" class="img" alt="" />
+                <img src="{{ asset('public/asset/Group 876.png') }}" class="img" alt="" />
                 <div
                     class="d-flex align-items-center flex-wrap justify-content-center gap-5 flex-wrap pt-5">
                     @foreach($plans as $plan)
