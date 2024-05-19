@@ -353,12 +353,12 @@
             <div class="section-header text-center mb-3">
                 <h2 class="mt-minus-5">عملائنا وشركاء النجاج</h2>
                 <div class="row " style="justify-content: center">
-                    <img src="{{ asset('asset/partenar/1.png') }}" style="width: 150px;" alt=""/>
-                    <img src="{{ asset('asset/partenar/2.svg') }}" style="width: 150px;" alt=""/>
-                    <img src="{{ asset('asset/partenar/3.png') }}" style="width: 150px;" alt=""/>
-                    <img src="{{ asset('asset/partenar/4.png') }}" style="width: 150px;" alt=""/>
-                    <img src="{{ asset('asset/partenar/5.png') }}" style="width: 150px;" alt=""/>
-                    <img src="{{ asset('asset/partenar/6.png') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/asset/partenar/1.png') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/asset/partenar/2.svg') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/sset/partenar/3.png') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/asset/partenar/4.png') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/asset/partenar/5.png') }}" style="width: 150px;" alt=""/>
+                    <img src="{{ asset('public/asset/partenar/6.png') }}" style="width: 150px;" alt=""/>
                 </div>
             </div>
 

@@ -7,7 +7,7 @@
                         <img
                             class="dark"
                             style="width: 80px;height: 60px"
-                            src="{{ asset('logo.png') }}"
+                            src="{{ asset('public/logo.png') }}"
                             alt="logo"
                         />
                     </a>
