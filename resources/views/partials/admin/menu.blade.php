@@ -1344,12 +1344,12 @@
                         class="dash-mtext">{{ __('Zoom Meeting') }}</span>
                 </a>
             </li>
-            <li class="dash-item dash-hasmenu {{ Request::segment(1) == 'chats' ? 'active' : '' }}">
+            {{-- <li class="dash-item dash-hasmenu {{ Request::segment(1) == 'chats' ? 'active' : '' }}">
                 <a href="{{ url('chats') }}" class="dash-link">
                     <span class="dash-micon"><i class="ti ti-message-circle"></i></span><span
                         class="dash-mtext">{{ __('Messenger') }}</span>
                 </a>
-            </li>
+            </li> --}}
         @endif
 
         @if (\Auth::user()->type == 'company')
