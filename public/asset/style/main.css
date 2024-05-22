@@ -10036,7 +10036,7 @@ ul.box__course li {
   font-weight: bold;
   display: flex !important;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   width: 100%;
 }
 
