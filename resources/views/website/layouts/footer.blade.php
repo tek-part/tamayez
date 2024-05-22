@@ -10,9 +10,9 @@
                                 <a style="width: 150px" href="#-2.html" class="footer__about-logo"><img
                                         src="asset/logo.png" width="100" alt="Logo"
                                         style="max-width: 100%; width: 100px" /><img /></a>
-                                <p class="footer__about-moto">
+                                {{-- <p class="footer__about-moto">
                                     {{ translate('footer_1') }}
-                                </p>
+                                </p> --}}
                                 <ul class="d-flex align-items-center gap-2">
                                     <li>
                                         <a href="https://www.facebook.com/profile.php?id=61556684580004">
@@ -27,56 +27,24 @@
                                     </li>
 
                                 </ul>
-                                <div style="display: none" class="footer__app">
-                                    <div class="footer__app-item footer__app-item--apple">
-                                        <div class="footer__app-inner">
-                                            <div class="footer__app-thumb">
-                                                <a href="https://www.apple.com/app-store/" target="_blank"
-                                                    class="stretched-link">
-                                                    <img src="asset/images/footer/apple.png" alt="apple-icon" />
-                                                </a>
-                                            </div>
-                                            <div class="footer__app-content">
-                                                <span>Download on the</span>
-                                                <p class="mb-0">App Store</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer__app-item footer__app-item--playstore">
-                                        <div class="footer__app-inner">
-                                            <div class="footer__app-thumb">
-                                                <a href="https://play.google.com/store" target="_blank"
-                                                    class="stretched-link">
-                                                    <img src="asset/images/footer/play.png" alt="playstore-icon" />
-                                                </a>
-                                            </div>
-                                            <div class="footer__app-content">
-                                                <span>GET IT ON</span>
-                                                <p class="mb-0">Google Play</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                             
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-4 col-6 mt-4">
                             <div class="footer__links">
                                 <div class="footer__links-tittle">
-                                    <h6>{{ translate('links') }}</h6>
+                                    <h6>الروابط</h6>
                                 </div>
                                 <div class="footer__links-content">
                                     <ul class="footer__linklist">
                                         <li>
-                                            <a href="{{ route('home') }}" class="active"> {{ translate('home') }} </a>
+                                            <a href="{{route('website.home')}}" class="active">الرئيسية </a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('site') }}"> {{ translate('site_design') }} </a>
+                                            <a href="{{route('website.price')}}">الأسعار</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('host') }}"> {{ translate('host_services') }} </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('work') }}">{{ translate('works') }} </a>
+                                            <a href="{{route('website.contact')}}">تواصل معنا</a>
                                         </li>
 
                                     </ul>
@@ -86,15 +54,15 @@
                         <div class="col-md-2 col-sm-4 col-6 mt-4">
                             <div class="footer__links">
                                 <div class="footer__links-tittle">
-                                    <h6>{{ translate('other Links') }}</h6>
+                                    <h6>روابط اخري</h6>
                                 </div>
                                 <div class="footer__links-content">
                                     <ul class="footer__linklist">
                                         <li>
-                                            <a href="{{ route('book') }}"> {{ translate('Start Project') }} </a>
+                                            <a href="{{ route('book') }}"> ابد مشروعك الان</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('contact') }}">{{ translate('Contact') }} </a>
+                                            <a href="{{ route('contact') }}">تواصل معنا  </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -103,7 +71,8 @@
                         <div class="col-md-3 col-sm-6 col-12 mt-4">
                             <div class="footer__links">
                                 <div class="footer__links-tittle">
-                                    <h6>{{ translate('contact information') }}</h6>
+                                    <h6>معلومات التواصل
+                                    </h6>
                                 </div>
                                 <div class="footer__links-content">
                                     <ul class="footer__linklist">
@@ -175,7 +144,7 @@
                     <div class="text-center w-100 m-auto">
                         <p class="mb-0">
                             <img src="asset/Star 18.svg" alt="" width="20" />
-                            {{ translate('All rights reserved TechPart') }}
+                            كل الحقوق محفوظه ل Tamayez 2024
                             <a href="https://tek-part.com/" target="_blank"> Tek Part </a>
                             2024
 
