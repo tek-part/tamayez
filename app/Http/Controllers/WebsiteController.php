@@ -15,7 +15,7 @@ class WebsiteController extends Controller
 {
     public function price()
     {
-        $plans = Plan::all();
+        $plans = Plan::whereNotIn('id', [1, 2])->get();
       return view('website.pages.price',compact('plans')) ;
     }
 
