@@ -45,7 +45,7 @@
                     class="d-flex  flex-wrap justify-content-center gap-5 flex-wrap pt-5">
                     @foreach($plans as $plan)
                         <div class="col-md-3 col-12" >
-                            <div class="box__pricing d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
+                            <div class="box__pricing h-100 d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
                                 <div>
                                     <h2>{{$plan->name}}</h2>
                                     <ul>
