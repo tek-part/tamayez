@@ -7,7 +7,7 @@
                     <div class="row gx-4">
                         <div class="col-md-4">
                             <div class="footer__about">
-                                <a style="width: 150px" href="#-2.html" class="footer__about-logo"><img
+                                <a style="width: 150px " style="margin-bottom: 3px"  href="#-2.html" class="footer__about-logo"><img
                                         src="public/logo.png" width="100" alt="Logo"
                                         style="max-width: 100%; width: 250px" /><img /></a>
                                 <p class="footer__about-moto">
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="d-flex gap-3 my-4 justify-content-center" >
+                        <ul class="d-flex gap-3 my-2 justify-content-center" >
                             <li>
                                 <a href="https://www.facebook.com/profile.php?id=61556684580004">
                                     <img src="{{ asset('public/asset/soail/facebook.svg') }}" alt="" width="35" />
