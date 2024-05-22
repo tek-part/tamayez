@@ -104,24 +104,24 @@
                                     <ul class="d-flex gap-3 my-4">
                                         <li>
                                             <a href="https://www.facebook.com/profile.php?id=61556684580004">
-                                                <img src="asset/soail/facebook.svg" alt="" width="35" />
+                                                <img src="{{ asset('puplic/asset/soail/facebook.svg') }}" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a
                                               href="https://www.instagram.com/tek_part?fbclid=IwZXh0bgNhZW0CMTAAAR2PGRaR6v6JcjUxG8picRHeZ3Owl26lxTnr8iFY4ANHjWJDfQLsYRkPmjY_aem_AasdxWpnEeZ2EdhX0G_cj6b7OMRABnaB_DP5ItpTb9jDTOyBpf6rf4DegqANI3lah8ZXOkztPJIszNNa-KY1QKJY"
                                             >
-                                            <img src="asset/soail/instgram.svg" alt="" width="35" />
+                                            <img src="{{ asset('puplic/asset/soail/instgram.svg') }}" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a href="https://www.linkedin.com/company/tek-part/">
-                                                <img src="asset/soail/linkedin.svg" alt="" width="35" />
+                                                <img src="{{ asset('puplic/asset/soail/linkedin.svg') }}" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a href="https://wa.me/966562005408">
-                                                <img src="asset/soail/whatsapp.svg" alt="" width="35" />
+                                                <img src="{{ asset('puplic/asset/soail/whatsapp.svg') }}" alt="" width="35" />
                                             </a>
                                           </li>
                               
