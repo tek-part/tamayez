@@ -180,12 +180,12 @@
                             2024
 
                         </p>
-                        <p> @php
+                        {{-- <p> @php
                             $visitors = App\Models\Visitor::count();
                         @endphp
                             {{ number_format($visitors, 0, '.', ',') }} زائر
 
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>
