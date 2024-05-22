@@ -9,7 +9,7 @@
                             <div class="footer__about">
                                 <a style="width: 150px" href="#-2.html" class="footer__about-logo"><img
                                         src="public/logo.png" width="100" alt="Logo"
-                                        style="max-width: 100%; width: 100px" /><img /></a>
+                                        style="max-width: 100%; width: 250px" /><img /></a>
                                 <p class="footer__about-moto">
                                     حصل على نظامك الخاص في دقائق، واربط منتجاتك بمجموعة متكاملة من الحلول الرقميَّة الذكيَّة للمدفوعات، والشحن، وإدارة المخزون، والتسويق، بكل سهولة؛ لأن نجاحك لا يحتاج إلى تعقيد.
                                 </p>

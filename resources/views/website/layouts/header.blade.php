@@ -6,7 +6,7 @@
                     <a href="{{route('website.home')}}">
                         <img
                             class="dark"
-                            style="width: 80px;height: 60px"
+                            style="width: 150px;height: 60px"
                             src="{{ asset('public/logo.png') }}"
                             alt="logo"
                         />
