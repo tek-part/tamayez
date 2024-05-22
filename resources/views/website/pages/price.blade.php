@@ -48,7 +48,7 @@
                             <div class="box__pricing h-100 d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
                                 <div>
                                     <h2>{{$plan->name}}</h2>
-                                    <h3>سنوي</h3>
+                                    <h3 style="text-align: center; color:#1ad550">سنوي</h3>
                                     <ul>
                                         @if($plan->max_users ==-1)
                                             <li class="text-white fs-6">✔ عدد غير محدود من المستخدمين </li>
