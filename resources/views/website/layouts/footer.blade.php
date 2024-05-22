@@ -104,24 +104,24 @@
                                     <ul class="d-flex gap-3 my-4">
                                         <li>
                                             <a href="https://www.facebook.com/profile.php?id=61556684580004">
-                                              <i class="fa-brands fa-facebook"></i>
+                                                <img src="asset/soail/facebook.svg" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a
                                               href="https://www.instagram.com/tek_part?fbclid=IwZXh0bgNhZW0CMTAAAR2PGRaR6v6JcjUxG8picRHeZ3Owl26lxTnr8iFY4ANHjWJDfQLsYRkPmjY_aem_AasdxWpnEeZ2EdhX0G_cj6b7OMRABnaB_DP5ItpTb9jDTOyBpf6rf4DegqANI3lah8ZXOkztPJIszNNa-KY1QKJY"
                                             >
-                                              <i class="fa-brands fa-instagram"></i>
+                                            <img src="asset/soail/instgram.svg" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a href="https://www.linkedin.com/company/tek-part/">
-                                              <i class="fa-brands fa-linkedin"></i>
+                                                <img src="asset/soail/linkedin.svg" alt="" width="35" />
                                             </a>
                                           </li>
                                           <li>
                                             <a href="https://wa.me/966562005408">
-                                              <i class="fa-brands fa-whatsapp"></i>
+                                                <img src="asset/soail/whatsapp.svg" alt="" width="35" />
                                             </a>
                                           </li>
                               
@@ -137,20 +137,8 @@
                                               <i class="fa-brands fa-snapchat"></i>
                                             </a>
                                           </li> -->
-                                          <li>
-                                            <a
-                                              href="https://www.tiktok.com/@tekpartsolution?fbclid=IwZXh0bgNhZW0CMTAAAR0RZhy1toEtp_IyGn4BE5di0ri5eCGSJ1V9uf1YbbhvnbbkPgLuRSgrhCg_aem_Aau__xkWij7Od1ajHL8DUx3qziG8Zs6v6HpnCkrdJAXFVrwBHi6fQ7J7kBNWQxez0nPcxtUFksQ6N_QKKA3Prsmf"
-                                            >
-                                              <i class="fa-brands fa-tiktok"></i>
-                                            </a>
-                                          </li>
-                                          <li>
-                                            <a
-                                              href="https://www.behance.net/tekpart_solution?fbclid=IwZXh0bgNhZW0CMTAAAR3OFg5OyGt6SXa4chx8l0j_cSuGLdVnhUNzn7i2WEtlLLO7BEaAdfBAGk0_aem_Aau8_-1egdtyxSwoS9LYzDVi2JhfYHjMqo7ROaYmCD2PI3TMthltTUdbWXNRbTCPGR5ouX9Z26lsBLgUlNG8bWlA"
-                                            >
-                                              <i class="fa-brands fa-behance"></i>
-                                            </a>
-                                          </li>
+                                         
+                                        
                                     </ul>
                                 </div>
                             </div>
