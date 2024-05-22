@@ -85,7 +85,7 @@
                                 </div>
                                <div>
                                 <span class="mt-4 d-block price">${{ number_format($plan->price, 2, '.', ',') }}</span>
-                                <button class="button__green mt-2">اشترك الان</button>
+                                <button class="button__blue mt-2">اشترك الان</button>
                                </div>
                             </div>
                         </div>
