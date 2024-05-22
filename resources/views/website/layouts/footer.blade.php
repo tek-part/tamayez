@@ -62,7 +62,7 @@
                                             <a href="{{ route('book') }}"> ابد مشروعك الان</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('contact') }}">تواصل معنا  </a>
+                                            <a href="{{ route('website.contact') }}">تواصل معنا  </a>
                                         </li>
                                     </ul>
                                 </div>
