@@ -24,11 +24,10 @@
             <img src="{{ asset('public/asset/Group (5).png') }}" class="bg__join__img" alt="" />
             <div class="container about__me t">
                 <h2 class="text-green text-center">
-                    أسعار تصميم متجر الكتروني احترافي
+                   اسعار باقات الاشتراك في تميز
                 </h2>
                 <p class="text-center mb-5">
-                    الأسعار تزيد وفقًا للمُميزات الإضافية للمتجر الالكتروني مثل الدفع
-                    الالكتروني وطُرُق الشحن والتوصيل
+                    الأسعار تزيد وفقًا للمُميزات الإضافية  
                 </p>
                 <div
                     class="banner__btn-group btn-group m-auto w-100 d-flex align-items-center justify-content-center pb-5"
