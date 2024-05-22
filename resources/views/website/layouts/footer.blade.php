@@ -8,11 +8,11 @@
                         <div class="col-md-4">
                             <div class="footer__about">
                                 <a style="width: 150px" href="#-2.html" class="footer__about-logo"><img
-                                        src="asset/logo.png" width="100" alt="Logo"
+                                        src="public/logo.png" width="100" alt="Logo"
                                         style="max-width: 100%; width: 100px" /><img /></a>
-                                {{-- <p class="footer__about-moto">
-                                    {{ translate('footer_1') }}
-                                </p> --}}
+                                <p class="footer__about-moto">
+                                    حصل على نظامك الخاص في دقائق، واربط منتجاتك بمجموعة متكاملة من الحلول الرقميَّة الذكيَّة للمدفوعات، والشحن، وإدارة المخزون، والتسويق، بكل سهولة؛ لأن نجاحك لا يحتاج إلى تعقيد.
+                                </p>
                                 <ul class="d-flex align-items-center gap-2">
                                     <li>
                                         <a href="https://www.facebook.com/profile.php?id=61556684580004">
