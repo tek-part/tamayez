@@ -101,7 +101,7 @@
                                         </li>
 
                                     </ul>
-                                    <ul class="d-flex gap-3 my-4">
+                                    <ul class="d-flex gap-3 my-4 justify-content-center" >
                                         <li>
                                             <a href="https://www.facebook.com/profile.php?id=61556684580004">
                                                 <img src="{{ asset('public/asset/soail/facebook.svg') }}" alt="" width="35" />
