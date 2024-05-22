@@ -1,5 +1,5 @@
 <!-- ===============>> footer  <<================= -->
-<footer class="footer brand-1 mt-4">
+<footer class="footer ">
     <div class="">
         <div class="footer__wrapper">
             <div class="footer__top mt-0 py-3 footer__top--style1">
@@ -124,20 +124,6 @@
                                                 <img src="{{ asset('public/asset/soail/whatsapp.svg') }}" alt="" width="35" />
                                             </a>
                                           </li>
-                              
-                                          <!-- <li>
-                                            <a
-                                              href="https://twitter.com/i/flow/login?redirect_after_login=%2Ftek_part"
-                                            >
-                                              <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                          </li> -->
-                                          <!-- <li>
-                                            <a href="">
-                                              <i class="fa-brands fa-snapchat"></i>
-                                            </a>
-                                          </li> -->
-                                         
                                         
                                     </ul>
                                 </div>
