@@ -42,12 +42,11 @@
                 </div>
                 <img src="{{ asset('public/asset/Group 876.png') }}" class="img" alt="" />
                 <div
-                    class="d-flex align-items-center flex-wrap justify-content-center gap-5 flex-wrap pt-5">
+                    class="d-flex  flex-wrap justify-content-center gap-5 flex-wrap pt-5">
                     @foreach($plans as $plan)
                         <div class="col-md-3 col-12" >
                             <div class="box__pricing d-flex justify-content-between flex-column" data-aos="flip-up" data-aos-duration="1000" style="min-height: 53vh">
                                 <div>
-                                  
                                     <h2>{{$plan->name}}</h2>
                                     <ul>
                                         @if($plan->max_users ==-1)
@@ -82,10 +81,11 @@
                                             <li class="text-white fs-6">✔المساحة التخزينية المتاحه {{$plan->storage_limit}} ميجا بايت </li>
                                         @endif
                                     </ul>
-                                    <span class="mt-4 d-block price">${{ number_format($plan->price, 2, '.', ',') }}</span>
                                 </div>
-
+                               <div>
+                                <span class="mt-4 d-block price">${{ number_format($plan->price, 2, '.', ',') }}</span>
                                 <button class="button__blue mt-2">اختر</button>
+                               </div>
                             </div>
                         </div>
                     @endforeach
