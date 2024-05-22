@@ -378,14 +378,7 @@
             </div> --}}
         </div>
 
-        {{-- <div class="container">
-            <div class="footer_2">
-                <div class="d-flex justify-content-between">
-                    <p>جميع الحقوق محفوظة لدى شركة تميز</p>
-                    <p>سياسات الخصوصية</p>
-                </div>
-            </div>
-        </div> --}}
+
     </section>
 @endsection
 

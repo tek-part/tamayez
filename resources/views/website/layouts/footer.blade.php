@@ -151,7 +151,7 @@
                     <div class="text-center w-100 m-auto">
                         <p class="mb-0">
                             <img src="asset/Star 18.svg" alt="" width="20" />
-                            كل الحقوق محفوظه ل Tamayez 2024
+                            كل الحقوق محفوظه ل 
                             <a href="https://tek-part.com/" target="_blank"> Tek Part </a>
                             2024
 
