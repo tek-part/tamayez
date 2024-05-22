@@ -78,24 +78,24 @@
                                     <ul class="footer__linklist">
                                         <li class="footer__linklist-item d-flex gap-3 align-items-center">
                                             <a href="https://wa.me/966562005408"><img class="mx-2"
-                                                    src="asset/phone.svg" alt="" />
+                                                    src="{{ asset('public/asset/soail/phone.svg') }}" alt="" />
                                                 <span dir="ltr">+966 56 200 5408 </span>
                                             </a>
                                         </li>
                                         <li class="footer__linklist-item d-flex gap-3 align-items-center">
                                             <a href="https://a.me/201094260793 "><img class="mx-2"
-                                                    src="asset/phone.svg" alt="" />
+                                                    src="{{ asset('public/asset/soail/phone.svg') }}" alt="" />
                                                 <span dir="ltr">+201094260793 </span>
                                             </a>
                                         </li>
                                         <li class="footer__linklist-item d-flex gap-3 align-items-center">
-                                            <a href="mailto:info@tek-part.com"><img class="mx-2" src="asset/sms.svg"
+                                            <a href="mailto:info@tek-part.com"><img class="mx-2" src="{{ asset('public/asset/soail/email.svg') }}"
                                                     alt="" />
                                                 <span dir="ltr">info@tek-part.com</span>
                                             </a>
                                         </li>
                                         <li class="footer__linklist-item d-flex gap-3 align-items-center">
-                                            <a href="#"><img class="mx-2" src="asset/location.svg"
+                                            <a href="#"><img class="mx-2" src="{{ asset('public/asset/soail/location.svg') }}"
                                                     alt="" />
                                                 المملكة العربية السعودية - الرياض </a>
                                         </li>
